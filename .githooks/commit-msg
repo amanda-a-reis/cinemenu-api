@@ -1,6 +1,6 @@
 #!/bin/sh
 
-commit_regex='^\[(FEATURE|REFACTOR|TEST|CI|RELEASE|BUGFIX|SETUP|HOTFIX|DOCUMENTATION)\]\[[#]{1}[0-9]{1,6}\]\s-\s[A-Z][[:alpha:][:space:]]{9,69}$'
+commit_regex='^\[(FEATURE|REFACTOR|TEST|CI|RELEASE|BUGFIX|SETUP|HOTFIX|DOCUMENTATION)\]\[[#]{1}[0-9]{1,6}\]\s-\s[A-Z][[:alpha:][:space:]]{9,54}$'
 result=$(grep -E $commit_regex "$1")
 
 error='
@@ -35,7 +35,7 @@ if [ -z "${result}" ]; then
     echo "$error_issue" >&2
   fi
 
-  commit_regex='\s-\s[A-Z][[:alpha:][:space:]]{9,69}$'
+  commit_regex='\s-\s[A-Z][[:alpha:][:space:]]{9,54}$'
   result=$(grep -E $commit_regex "$1")
   if [ -z "${result}" ]; then
     echo "$error_msg" >&2
