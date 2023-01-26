@@ -1,0 +1,23 @@
+{
+  "name": "cinemenu-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "githooks": "cp .githooks/commit-msg .git/hooks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amanda-a-reis/cinemenu-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amanda-a-reis/cinemenu-api/issues"
+  },
+  "homepage": "https://github.com/amanda-a-reis/cinemenu-api#readme",
+  "devDependencies": {
+    "husky": "^4.3.8"
+  }
+}
