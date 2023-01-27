@@ -7,7 +7,5 @@
     "allowJs": true,
     "strictNullChecks": true,
     "noImplicitAny": true
-  },
-  "exclude": ["./src/test/**/*.ts", "./ci-coverage/**/*.ts", "jest.config.ts"]
+  }
 }
-

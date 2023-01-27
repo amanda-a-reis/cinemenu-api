@@ -9,7 +9,7 @@
     "test:all": "jest --coverage --coverageReporters='text-summary' > ci-coverage/coverage.txt",
     "coverage:dev": "npm run test:all && jest --coverage",
     "test:coverage": "jest coverage.spec.ts",
-    "start:dev": "ts-node-dev src/index.ts"
+    "start:dev": "ts-node-dev src/main/index.ts"
   },
   "repository": {
     "type": "git",
