@@ -1,1 +1,3 @@
-export const sum = (a: number, b: number): number => a + b
+import { sum } from '@main/sum/foo'
+
+export const FIVE = sum(3, 2)

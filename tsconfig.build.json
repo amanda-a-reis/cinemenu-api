@@ -9,8 +9,15 @@
     "noImplicitAny": true,
     "baseUrl": "src",
     "paths": {
-      "@main/*": ["main/*"],
-      "@test/*": ["test/*"]
+      "@main/*": [
+        "main/*"
+      ]
     }
-  }
+  },
+  "exclude": [
+    "./src/test/**/*.ts",
+    "./ci-coverage/**/*.ts",
+    "jest.config.ts",
+    "./coverage"
+  ]
 }

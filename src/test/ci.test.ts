@@ -1,8 +1,9 @@
-import { sum } from '../main/index'
+import { sum } from '@main/sum/foo'
+import { SIX } from '@test/main/constant'
 
 describe('Testing Jest with CI', () => {
-  it('Always true test', () => {
-    const sut = sum(1, 1)
-    expect(sut).toBe(2)
+  it('Should teste the imports', () => {
+    const sut = sum(3, 3)
+    expect(sut).toBe(SIX)
   })
 })
