@@ -7,11 +7,10 @@
     "allowJs": true,
     "strictNullChecks": true,
     "noImplicitAny": true,
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "@main/*": [
-        "main/*"
-      ]
+      "@main/*": ["src/main/*"],
+      "@config/*": ["config/*"]
     }
   },
   "exclude": [
