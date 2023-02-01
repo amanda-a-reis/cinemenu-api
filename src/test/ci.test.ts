@@ -11,7 +11,7 @@ describe('Testing Jest with CI', () => {
     expect(TEN).toBe(10)
   })
   it('Should test directly the @config import', () => {
-    const ALWAYS_TRUE = environment.boolean
-    expect(ALWAYS_TRUE).toBe(true)
+    const ELEVEN = sum(environment.number, 1)
+    expect(ELEVEN).toBe(11)
   })
 })
