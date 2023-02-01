@@ -26,6 +26,8 @@ jobs:
  
       - name: Run tests
         run: npm run test:all
-
+        env:
+          ENV_NUMBER: ${{ secrets.ENV_NUMBER }}
+      
       - name: Verify coverage
         run: npm run test:coverage

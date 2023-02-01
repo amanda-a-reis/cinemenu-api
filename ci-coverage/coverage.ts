@@ -10,7 +10,7 @@ interface Metrics {
 
 type Report = [isValidStatement: boolean, isValidBranch: boolean, isValidFunction: boolean, isValidLine: boolean]
 
-export class Coverage {
+class Coverage {
   coverageString: string
 
   constructor (private readonly metrics: Metrics) {
@@ -58,3 +58,5 @@ export class Coverage {
     return report.every((element: boolean) => element)
   }
 }
+
+export { Coverage, Metrics }

@@ -5,6 +5,8 @@
   },
   "rules": {
     "no-return-await": "off",
-    "@typescript-eslint/return-await": "warn"
+    "@typescript-eslint/return-await": "warn",
+    "@typescript-eslint/consistent-type-exports": "off",
+    "@typescript-eslint/consistent-type-imports": "off"
   }
 }
