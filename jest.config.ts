@@ -8,6 +8,7 @@ export default {
   },
   moduleNameMapper: {
     '@main(.*)': '<rootDir>/src/main/$1',
-    '@test(.*)': '<rootDir>/src/test/$1'
+    '@test(.*)': '<rootDir>/src/test/$1',
+    '@config(.*)': '<rootDir>/config/$1'
   }
 }
