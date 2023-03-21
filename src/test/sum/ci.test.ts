@@ -1,5 +1,5 @@
 import { sum, TEN } from '@main/sum/foo'
-import { SIX } from '@test/main/constant'
+import { SIX } from '@test/sum/constant'
 import { environment } from '@config/environment'
 
 describe('Testing Jest with CI', () => {
